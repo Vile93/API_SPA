@@ -8,8 +8,9 @@ import { IAlbum } from '../interfaces/IAlbum';
 const Userpage = () => {
     const { user, albums } = useLoaderData() as {
         user: Promise<IUser>;
-        albums: Promise<IAlbum>;
+        albums: Promise<IAlbum[]>;
     };
+
     const params = useParams();
 
     return (
