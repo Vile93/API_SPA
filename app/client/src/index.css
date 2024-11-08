@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Arial;
+}
+
+.active {
+    font-weight: 600;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    color: #0032e2;
+}
+
+a::before {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background-color: #0032e2;
+    position: absolute;
+    bottom: 1px;
+    transition: 0.3s all;
+}
+
+a:hover::before {
+    width: 100%;
+}
