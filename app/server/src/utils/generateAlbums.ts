@@ -1,5 +1,4 @@
 import { Chance } from 'chance';
-import { users } from '..';
 import { COUNT } from '../constants';
 import { IAlbum } from '../interfaces/IAlbum';
 

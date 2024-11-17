@@ -1,9 +1,10 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import cors from 'cors';
 import router from './routes/router';
 import { generateUsers } from './utils/generateUsers';
 import { generateAlbums } from './utils/generateAlbums';
 import { generatePhotos } from './utils/generatePhotos';
+import 'dotenv/config';
 
 const app = express();
 const port = process.env.PORT || 3000;
