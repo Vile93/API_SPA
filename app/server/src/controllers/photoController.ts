@@ -14,8 +14,6 @@ const PhotoController = {
         }
         if (page && limit) {
             resPhotos = pagination(resPhotos, +page, +limit);
-            res.json(resPhotos).status(200);
-            return;
         }
         res.json(resPhotos).status(200);
     },
