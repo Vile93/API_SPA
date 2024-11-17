@@ -6,7 +6,7 @@ export const COUNT = {
     COUNT_OF_PHOTOS_PER_ALBUM: 50,
 };
 
-export const IMAGE_URL = `http://localhost:${process.env.PORT}/images`;
+export const IMAGE_URL = `http://localhost:${process.env.PORT || 3000}/images`;
 export const SIZE_OF_IMAGE = {
     LOW: 150,
     HIGH: 600,
